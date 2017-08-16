@@ -1,3 +1,4 @@
+import { MeuFormModule } from './meu-form/meu-form.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -10,7 +11,8 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
     DataBindingComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MeuFormModule
   ],
   providers: [],
   bootstrap: [AppComponent]
