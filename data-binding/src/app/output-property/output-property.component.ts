@@ -7,15 +7,15 @@ import { Component, OnInit, Input, EventEmitter, Output, ViewChild, ElementRef }
 })
 export class OutputPropertyComponent implements OnInit {
 
-  @Input() valor: number = 0;
+  @Input() valor = 0;
 
   @Output() mudouValor = new EventEmitter();
 
   @ViewChild('campoInput') campoValorInput: ElementRef;
 
   incrementar() {
-    //console.log(this.campoValorInput.nativeElement.value);
-    //this.valor++;
+    // console.log(this.campoValorInput.nativeElement.value);
+    // this.valor++;
     this.campoValorInput.nativeElement.value++;
     this.mudouValor.emit({novoValor: this.valor});
   }
