@@ -10,5 +10,5 @@ import * as _ from 'lodash';
 export class AppComponent {
   title = 'app';
 
-  list = _.map([1, 2, 3], (n) => `# ${n}`);
+  list = _.map([1, 2, 3, 4], (n) => `# ${n}`);
 }
